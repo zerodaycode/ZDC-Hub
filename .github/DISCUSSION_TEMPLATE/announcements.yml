@@ -1,0 +1,44 @@
+title: "[Announcement] "
+labels: ["Announcement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📰 Announcement Details
+        Use this form to structure your announcement. Be sure to fill in all required fields.
+
+  - type: input
+    id: title
+    attributes:
+      label: "Title"
+      description: "Enter a short and descriptive title for the announcement."
+      placeholder: "E.g., New Feature Release!"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "Provide a brief summary of the announcement."
+      placeholder: "Write a short summary..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Details"
+      description: "Provide detailed information about the announcement. Include links or instructions if applicable."
+      placeholder: "Add your detailed announcement content here..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context (Optional)"
+      description: "Include any extra details, references, or resources related to the announcement."
+      placeholder: "Optional context or links..."
+    validations:
+      required: false
