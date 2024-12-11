@@ -1,0 +1,53 @@
+title: "[Brainstorm Bay] "
+labels: ["ZDC-HUB-Ideas", "ZDC-HUB-Discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Welcome to Brainstorm Bay!
+        Share your thoughts, ideas, and inspirations here. Discuss new trends, propose creative projects, or talk about the direction of the organization. This is your space for open and free-flowing exchanges.
+
+  - type: input
+    id: title
+    attributes:
+      label: "Title"
+      description: "Give your idea or discussion a clear and concise title."
+      placeholder: "E.g., Exploring Rust's Newest Features"
+    validations:
+      required: true
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: "Topic"
+      description: "Briefly describe the topic or idea you're proposing or discussing."
+      placeholder: "Give a short overview of your discussion."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: discussion_type
+    attributes:
+      label: "Type of Discussion"
+      options:
+        - "News/Trend"
+        - "Idea"
+        - "Organization Direction"
+      description: "Select the type of discussion this post falls under."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Details"
+      description: "Provide more context or details for your idea, news, or discussion."
+      placeholder: "Expand on your topic with relevant context, links, or references."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 🌟 Get Inspired and Innovate!
+        Use this space to explore new ideas, discuss the latest news, and brainstorm potential projects.
