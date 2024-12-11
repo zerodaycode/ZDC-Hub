@@ -1,0 +1,56 @@
+title: "[Zork] "
+labels: ["ZDC-HUB/Zork"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Welcome to the Zork Project Discussion Space!
+        Use this form to report issues, ask questions, propose ideas, or share feedback about the Zork project. Please ensure you select the appropriate type of discussion and provide sufficient details.
+
+  - type: input
+    id: title
+    attributes:
+      label: "Title"
+      description: "Give a clear and concise title to your discussion."
+      placeholder: "E.g., Bug with clang"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: discussion_type
+    attributes:
+      label: "Type of Discussion"
+      options:
+        - "Incidence"
+        - "Question"
+        - "Idea"
+        - "Feedback"
+        - "Other"
+      description: "Select the type of discussion this post falls under."
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: "Affected Version (Optional)"
+      description: "Specify the version of Zork relevant to your discussion (if applicable)."
+      placeholder: "E.g., v1.2.3"
+    validations:
+      required: false
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Details"
+      description: "Provide detailed information about the discussion. Include steps to reproduce, links, or other relevant details."
+      placeholder: "Add your detailed discussion content here..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 🤝 Collaborate and Innovate!
+        Thank you for contributing to the Zork project. Share your insights, report issues clearly, and help us build something amazing together!
+
